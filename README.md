@@ -8,7 +8,7 @@ Um site estático simples focado em cidades asiáticas (Tóquio, Seul e Xangai).
 - `tokyo.html` — página de Tóquio
 - `seoul.html` — página de Seul
 - `shanghai.html` — página de Xangai
-- `city1.html` — modelo legado de página de cidade (exemplo de estrutura)
+- `bangkok.html` — página de Bangkok (Bangcoc)
 - `contact.html` — página de contato
 - `styles.css` — estilos básicos (opcional, crie/edite conforme necessário)
 
