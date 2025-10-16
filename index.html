@@ -2,101 +2,128 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Blog Aventuras Asiáticas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore as cidades mais vibrantes da Ásia em nosso blog de viagens. Descubra guias, fotos e dicas sobre Tóquio, Seul, Xangai, Bangkok e muito mais.">
+    <meta name="keywords" content="blog de viagem, Ásia, Tóquio, Seul, Xangai, Bangkok, turismo, aventuras asiáticas">
+    <meta name="author" content="Blog Aventuras Asiáticas">
+    <title>Jornadas Asiáticas | Um Blog de Viagens Pela Ásia</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    <h1>Jornadas Asiáticas: Explorando Cidades da Ásia</h1>
-    <p>Bem-vindo ao nosso Blog Aventuras Asiáticas, dedicado a explorar as cidades mais vibrantes da Ásia. Descubra nossas 3 favoritas que conquistaram nossos corações e alimentaram nossa vontade de viajar.</p>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Jornadas Asiáticas: Um Diário de Bordo Pelo Continente</h1>
+            <p class="subtitle">Bem-vindo ao nosso cantinho de descobertas. Aqui, compartilhamos não apenas roteiros, mas as histórias, os sabores e as sensações que transformaram nossas viagens pela Ásia em memórias inesquecíveis. Prepare-se para embarcar conosco!</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="tokyo.html">Tóquio</a></li>
-            <li><a href="seoul.html">Seul</a></li>
-            <li><a href="shanghai.html">Xangai</a></li>
-            <li><a href="bangkok.html">Bangkok</a></li>
-            <li><a href="contact.html">Contato</a></li>
-        </ul>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tokyo.html">Tóquio</a></li>
+                <li><a href="seoul.html">Seul</a></li>
+                <li><a href="shanghai.html">Xangai</a></li>
+                <li><a href="bangkok.html">Bangkok</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="photo-gallery">
-        <h1>Galeria de Viagens pela Ásia</h1>
-        <p>Entre no nosso mundo de aventuras asiáticas. Cada foto conta uma história, cada momento é uma memória.</p>
-        
-        <ul>
-            <li>
-                <a href="tokyo.html" aria-label="Ver página de Tóquio">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=1200&auto=format&fit=crop" alt="Vista noturna de Tóquio com neon">
-                        <figcaption>Noite em Shinjuku, Tóquio — onde o neon encontra tradição.</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="seoul.html" aria-label="Ver página de Seul">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200&auto=format&fit=crop" alt="Rua tradicional em Seul">
-                        <figcaption>Hanok Village, Seul — serenidade entre arranha-céus modernos.</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="shanghai.html" aria-label="Ver página de Xangai">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop" alt="Horizonte de Xangai, Bund">
-                        <figcaption>A orla do Bund, Xangai — um encontro de histórias e horizontes.</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="bangkok.html" aria-label="Ver página de Bangkok (Bangcoc)">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1526481280698-8fcc13fd4087?q=80&w=1200&auto=format&fit=crop" alt="Wat Arun ao entardecer em Bangkok">
-                        <figcaption>Wat Arun, Bangkok — dourado ao pôr do sol.</figcaption>
-                    </figure>
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <section id="newsletter">
-    <h1>Fique por Dentro das Nossas Aventuras Asiáticas!</h1>
-    <p>Inscreva-se na nossa newsletter e nunca perca uma história das nossas jornadas pela Ásia.</p>
-        
-        <form action="/subscribe" method="post">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+    <main>
+        <section id="destinos-destaque" class="container">
+            <h2>Destinos que Marcaram Nossa Jornada</h2>
+            <p>Mais do que cartões-postais, estas são as janelas para os momentos que nos deixaram sem fôlego. Navegue por nossas galerias e sinta um pouco da energia vibrante de cada cidade que tivemos o privilégio de explorar.</p>
             
-            <div>
-                <input type="checkbox" id="consent" name="consent" required>
-                <label for="consent">Concordo em receber atualizações e promoções por e-mail.</label>
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <a href="tokyo.html" aria-label="Ler mais sobre Tóquio">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=1200&auto=format&fit=crop" alt="Vista noturna de Tóquio com luzes de neon brilhantes em Shinjuku.">
+                            <figcaption>Shinjuku, Tóquio: Onde o futuro pisca em neon e as tradições se escondem em cada esquina.</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="gallery-item">
+                    <a href="seoul.html" aria-label="Ler mais sobre Seul">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200&auto=format&fit=crop" alt="Rua tradicional com casas de telhado curvo na Hanok Village em Seul.">
+                            <figcaption>A calma das vielas de Hanok Village, um refúgio de paz no coração da agitada Seul.</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="gallery-item">
+                    <a href="shanghai.html" aria-label="Ler mais sobre Xangai">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=1200&auto=format&fit=crop" alt="O horizonte moderno de Xangai visto da orla do Bund.">
+                            <figcaption>O Bund de Xangai, onde o passado e o futuro arrojado se encaram através do rio.</figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="gallery-item">
+                    <a href="bangkok.html" aria-label="Ler mais sobre Bangkok (Bangcoc)">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1526481280698-8fcc13fd4087?q=80&w=1200&auto=format&fit=crop" alt="O templo Wat Arun em Bangkok iluminado com tons dourados ao entardecer.">
+                            <figcaption>O brilho dourado do Wat Arun refletido nas águas ao entardecer mágico de Bangkok.</figcaption>
+                        </figure>
+                    </a>
+                </article>
             </div>
-            
-            <button type="submit">Inscrever-se Agora</button>
-        </form>
-    </section>
+        </section>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="privacidade.html">Política de Privacidade</a></li>
-                <li><a href="termos.html">Termos de Uso</a></li>
-            </ul>
-        </nav>
-        <div class="social-media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
-        <div class="contact-info">
-            <p>Contato: <a href="mailto:contact@globaladventuresblog.com">contact@globaladventuresblog.com</a></p>
+        <section id="newsletter" class="newsletter-section">
+            <div class="container">
+                <h2>Não Perca o Próximo Embarque!</h2>
+                <p>Junte-se à nossa comunidade de viajantes! Ao se inscrever, você recebe em primeira mão nossos guias exclusivos, dicas secretas que não contamos em outro lugar e as histórias por trás de cada foto. A próxima aventura começa na sua caixa de entrada.</p>
+                
+                <form action="/subscribe" method="post" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Seu melhor e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                    </div>
+                    
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Concordo em receber atualizações e promoções por e-mail.</label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Inscrever-se Agora</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-nav">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos.html">Termos de Uso</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Nossa página no Facebook">Facebook</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Nosso perfil no Twitter">Twitter</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Nosso perfil no Instagram">Instagram</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><a href="mailto:contato@aventurasasiaticas.com">contato@aventurasasiaticas.com</a></p>
+            </div>
         </div>
         <div class="copyright">
-            <p>© 2035 Blog Aventuras Asiáticas. Todos os direitos reservados.</p>
+            <p>© 2025 Blog Aventuras Asiáticas. Todos os direitos reservados.</p>
         </div>
     </footer>
+
 </body>
 </html>
