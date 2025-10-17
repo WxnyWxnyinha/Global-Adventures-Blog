@@ -60,10 +60,8 @@ cd Global-Adventures-Blog
 - Imagens de exemplo: Unsplash (uso educacional). Substitua por suas próprias fotos e verifique licenças conforme necessário.
 - Projeto fictício para estudos/portfólio (sem fins comerciais).
 
-
 ## 📬 Contato
-Use a página `contact.html` ou envie um e-mail para: contato@aventurasasiaticas.com
-
+Para dúvidas, sugestões ou feedback, fique à vontade para abrir uma issue ou entrar em contato pelo repositório!
 
 ---
 <div align="center">

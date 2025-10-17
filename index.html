@@ -22,7 +22,7 @@
     <nav class="main-nav">
         <div class="container">
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" aria-current="page">Início</a></li>
                 <li><a href="tokyo.html">Tóquio</a></li>
                 <li><a href="seoul.html">Seul</a></li>
                 <li><a href="shanghai.html">Xangai</a></li>
@@ -38,41 +38,43 @@
             <p>Mais do que cartões-postais, estas são as janelas para os momentos que nos deixaram sem fôlego. Navegue por nossas galerias e sinta um pouco da energia vibrante de cada cidade que tivemos o privilégio de explorar.</p>
             
             <div class="gallery-grid">
+                
                 <article class="gallery-item">
-                    <a href="tokyo.html" aria-label="Ler mais sobre Tóquio">
-                        <figure>
-                            <img src="img/img4.jpg" alt="Vista noturna de Tóquio com luzes de neon brilhantes em Shinjuku.">
-                            <figcaption>Shinjuku, Tóquio: Onde o futuro pisca em neon e as tradições se escondem em cada esquina.</figcaption>
-                        </figure>
+                    <a href="tokyo.html" aria-label="Ler mais sobre Tóquio" class="visual-card">
+                        <img src="img/img4.jpg" alt="Vista noturna de Tóquio com luzes de neon brilhantes em Shinjuku." class="card-image">
+                        <div class="card-content">
+                            Shinjuku, Tóquio: Onde o futuro pisca em neon e as tradições se escondem em cada esquina.
+                        </div>
                     </a>
                 </article>
 
                 <article class="gallery-item">
-                    <a href="seoul.html" aria-label="Ler mais sobre Seul">
-                        <figure>
-                            <img src="img/img3.webp" alt="Rua tradicional com casas de telhado curvo na Hanok Village em Seul.">
-                            <figcaption>A calma das vielas de Hanok Village, um refúgio de paz no coração da agitada Seul.</figcaption>
-                        </figure>
+                    <a href="seoul.html" aria-label="Ler mais sobre Seul" class="visual-card">
+                        <img src="img/img3.webp" alt="Rua tradicional com casas de telhado curvo na Hanok Village em Seul." class="card-image">
+                        <div class="card-content">
+                            A calma das vielas de Hanok Village, um refúgio de paz no coração da agitada Seul.
+                        </div>
                     </a>
                 </article>
 
                 <article class="gallery-item">
-                    <a href="shanghai.html" aria-label="Ler mais sobre Xangai">
-                        <figure>
-                            <img src="img/img2.jpg" alt="O horizonte moderno de Xangai visto da orla do Bund.">
-                            <figcaption>O Bund de Xangai, onde o passado e o futuro arrojado se encaram através do rio.</figcaption>
-                        </figure>
+                    <a href="shanghai.html" aria-label="Ler mais sobre Xangai" class="visual-card">
+                        <img src="img/img2.jpg" alt="O horizonte moderno de Xangai visto da orla do Bund." class="card-image">
+                        <div class="card-content">
+                            O Bund de Xangai, onde o passado e o futuro arrojado se encaram através do rio.
+                        </div>
                     </a>
                 </article>
 
                 <article class="gallery-item">
-                    <a href="bangkok.html" aria-label="Ler mais sobre Bangkok (Bangcoc)">
-                        <figure>
-                            <img src="img/img1.webp" alt="O templo Wat Arun em Bangkok iluminado com tons dourados ao entardecer.">
-                            <figcaption>O brilho dourado do Wat Arun refletido nas águas ao entardecer mágico de Bangkok.</figcaption>
-                        </figure>
+                    <a href="bangkok.html" aria-label="Ler mais sobre Bangkok (Bangcoc)" class="visual-card">
+                        <img src="img/img1.webp" alt="O templo Wat Arun em Bangkok iluminado com tons dourados ao entardecer." class="card-image">
+                        <div class="card-content">
+                            O brilho dourado do Wat Arun refletido nas águas ao entardecer mágico de Bangkok.
+                        </div>
                     </a>
                 </article>
+
             </div>
         </section>
 
@@ -83,7 +85,7 @@
                 
                 <form action="/subscribe" method="post" class="newsletter-form">
                     <div class="form-group">
-                        <label for="email">Seu melhor e-mail:</label>
+                        <label for="email" style="display: none;">Seu melhor e-mail:</label>
                         <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
                     </div>
                     
@@ -119,9 +121,9 @@
                 <h4>Contato</h4>
                 <p><a href="mailto:contato@aventurasasiaticas.com">contato@aventurasasiaticas.com</a></p>
             </div>
-        </div>
-        <div class="copyright">
-            <p>© 2025 Blog Aventuras Asiáticas. Todos os direitos reservados.</p>
+             <div class="copyright">
+                <p>© 2025 Blog Aventuras Asiáticas. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 

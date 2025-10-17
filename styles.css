@@ -1,0 +1,365 @@
+/* ==========================================================================
+   1. Variáveis Globais e Estilos Base
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  /* Paleta de Cores (Vermelho e Azul) */
+  --color-primary: #D32F2F;
+  --color-primary-dark: #B71C1C;
+  --color-headings: #1A237E;
+  --color-text: #37474F;
+  --color-background: #F8F9FA;
+  --color-white: #FFFFFF;
+  --color-border: #CFD8DC;
+
+  /* Tipografia */
+  --font-headings: 'Poppins', 'Helvetica Neue', sans-serif;
+  --font-body: 'Lora', 'Georgia', serif;
+
+  /* Outras Variáveis */
+  --container-width: 1200px;
+  --border-radius: 12px; /* Bordas um pouco mais arredondadas */
+  --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+/* Reset Básico */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.75;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-headings);
+  color: var(--color-headings);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   2. Cabeçalho e Navegação
+   ========================================================================== */
+
+.site-header {
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.site-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-header .subtitle {
+  font-size: 1.15rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  background-color: var(--color-white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.main-nav a {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  color: var(--color-headings);
+}
+
+.main-nav a[aria-current="page"] {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   3. Conteúdo Principal (Main)
+   ========================================================================== */
+
+main {
+  padding: 4rem 0;
+}
+
+main h2 {
+  font-size: 2.75rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main > section > p:first-of-type {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* --- NOVO ESTILO PARA GALERIA E CARDS --- */
+
+/* Estilo Base Comum para todos os cards visuais */
+.visual-card {
+    position: relative;
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o texto na parte de baixo */
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.visual-card:hover {
+    text-decoration: none;
+}
+
+.visual-card .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.4s ease;
+}
+
+.visual-card:hover .card-image {
+    transform: scale(1.05); /* Efeito de zoom no hover */
+}
+
+/* Gradiente para garantir a legibilidade do texto */
+.visual-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 10%, rgba(0,0,0,0) 50%);
+    z-index: 2;
+}
+
+.card-content {
+    position: relative;
+    z-index: 3;
+    padding: 1.5rem;
+}
+
+/* Galeria da Página Inicial (index.html) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.gallery-item a {
+    aspect-ratio: 16 / 10; /* Proporção padrão para as imagens */
+}
+
+/* Esconde a tag <figcaption> e usamos um div para o conteúdo */
+.gallery-item figcaption { display: none; }
+.gallery-item .card-content { font-size: 1.2rem; font-weight: 600; font-family: var(--font-headings); }
+
+
+/* Layout de 3 Colunas para Cidades */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.content-card {
+    min-height: 450px; /* Altura padrão para todos os cards */
+}
+
+.content-card .card-image {
+    /* Herda o estilo do .visual-card .card-image */
+}
+
+.content-card h3 {
+    color: var(--color-white);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-card p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+/* --- FIM DO NOVO ESTILO --- */
+
+
+/* ==========================================================================
+   4. Seção de Newsletter e Formulários
+   ========================================================================== */
+.newsletter-section {
+    background-color: var(--color-headings);
+    color: var(--color-white);
+    padding: 4rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    color: var(--color-white);
+}
+
+.newsletter-section p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form, .newsletter-form {
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+input:focus, textarea:focus {
+    outline-color: var(--color-primary);
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-headings);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ==========================================================================
+   5. Rodapé
+   ========================================================================== */
+
+.site-footer {
+  background-color: #263238; /* Cinza escuro para o rodapé */
+  color: #B0BEC5;
+  padding: 4rem 0;
+  margin-top: 4rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.site-footer h4 {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.site-footer ul {
+  list-style: none;
+}
+.site-footer li {
+    margin-bottom: 0.5rem;
+}
+
+.site-footer a {
+  color: #B0BEC5;
+}
+
+.site-footer a:hover {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 1px solid #37474F;
+    margin-top: 3rem;
+    grid-column: 1 / -1;
+}
+
+/* ==========================================================================
+   6. Media Queries (Responsividade)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .content-grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Uma coluna em celulares */
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr; /* Uma coluna em celulares */
+    }
+}
