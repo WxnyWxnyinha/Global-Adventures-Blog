@@ -1,5 +1,3 @@
-![Banner Jornadas Asiáticas](https://images.unsplash.com/photo-1549888834-3ec93abae044?q=80&w=1600&auto=format&fit=crop)
-
 # Jornadas Asiáticas — Blog de Viagens 🌏✈️
 
 Bem-vindo ao nosso cantinho de descobertas pela Ásia! Aqui você encontra relatos, guias práticos, dicas e fotos de destinos que nos marcaram — tudo de forma simples, direta e com muito carinho.
