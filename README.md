@@ -46,7 +46,11 @@ Global-Adventures-Blog/
 
 ## 🌐 Como Visualizar
 
-Clone este repositório e abra o arquivo `index.html` no seu navegador favorito:
+Você pode acessar a versão online (GitHub Pages):
+
+- https://wxnywxnyinha.github.io/Global-Adventures-Blog/
+
+Ou clonar este repositório e abrir o arquivo `index.html` no seu navegador favorito:
 
 ```bash
 git clone https://github.com/WxnyWxnyinha/Global-Adventures-Blog.git
